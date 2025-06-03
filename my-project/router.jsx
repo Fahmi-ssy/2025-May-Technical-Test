@@ -1,18 +1,22 @@
+
 import { createBrowserRouter } from "react-router-dom";
-import MainLayout from "./src/pages/MainLayout"; // Adjust the import path as needed
+import MainLayout from "./src/pages/MainLayout";
 import DiaryList from "./src/pages/DiaryList";
+import DetailDiary from "./src/pages/DetailDiary";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
-    // You can also add `children` here if needed:
     children: [
       {
         path: "/",
-        element: <DiaryList/>,
-      } 
-    ]
-
+        element: <DiaryList />,
+      },
+      {
+        path: "/detail/:id",
+        element: <DetailDiary />,
+      },
+    ],
   },
 ]);

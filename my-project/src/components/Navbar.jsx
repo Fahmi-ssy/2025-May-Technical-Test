@@ -5,32 +5,7 @@ export default function Navbar() {
         <div className="text-white text-2xl font-extrabold tracking-wide hover:scale-105 transition-transform duration-200">
           🚀 Technical Test
         </div>
-        <ul className="flex space-x-6 mt-4 md:mt-0">
-          <li>
-            <a
-              href="/"
-              className="text-gray-200 font-medium hover:text-white hover:underline underline-offset-4 transition-colors duration-200"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="/about"
-              className="text-gray-200 font-medium hover:text-white hover:underline underline-offset-4 transition-colors duration-200"
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="/contact"
-              className="text-gray-200 font-medium hover:text-white hover:underline underline-offset-4 transition-colors duration-200"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
+        <ul className="flex space-x-6 mt-4 md:mt-0"></ul>
       </div>
     </nav>
   );
